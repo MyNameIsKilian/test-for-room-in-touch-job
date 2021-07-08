@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+.home-page {
+    height: 92vh;
+    background-image: url("https://media.giphy.com/media/Vbtc9VG51NtzT1Qnv1/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-infos {
+    position: relative;
+    top: 250px;
+    left: 1200px;
+    width: 400px;
+    height: 250px;
+    h1 {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+    }
+}
+.discover {
+    text-decoration: none;
+    text-align: center;
+    color: brown;
+    margin-top: 30px;
+    background-color: beige;
+    font-size: 24px;padding: 10px 15px;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: beige;
+        text-decoration: none;
+        color: brown;
+    }
+}
