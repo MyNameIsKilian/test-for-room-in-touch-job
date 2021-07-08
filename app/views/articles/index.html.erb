@@ -10,36 +10,10 @@
 </div>
 
 <div class="articles-container">
+    <%= render 'shared/form-article' %>
     <% @articles.each do |article| %>
         <%= link_to article.title, article_path(article) %>
         <p> <%= article.content %> </p>
         <tr>
     <% end %>
-    <p>TEST RAILS ROOM IN TOUCH :
-
-L'idée est de faire un site sous rails dans la veine de Medium.
-
-- L'app est une app d'articles publiés par les personnes inscrites sur l'app (users)
-- Chaque utilisateur non connecté doit pouvoir consulter la liste de tous les articles et pouvoir faire une recherche sur le titre dans cet index.
-- Chaque utilisateur non connecté doit pouvoir consulter chaques article de façon individuel.
-- Si l'utilisateur est connecté il doit pouvoir upvote l'article et le commenter (afficher les commentaires/questions en dessous de l'article).
-- Les utilisateurs non connectés doivent pouvoir voir les commentaires mais ne peuvent pas en poster.
-- Un utilisateur connecté doit pouvoir écrire un article avec un éditeur rich text (mise en gras, italique... etc) et le publier en mode publique ou non.
-- Si l'article est en mode privé il ne doit être visible que par son créateur et de personne d'autre et doit pouvoir passer en visibilité publique en un clic sur un bouton.
-
-
-POUR CE TEST JE VAIS REGARDER :
-
-- Les bonnes pratiques en Back-end (routing + MVC + services et/ou helpers si besoin),
-- Ce que vous savez faire en Front et comment vous rangez ça dans votre code,
-- Le style de votre code (indentation, DRY...)
-- Vous pouvez utiliser du JS bien entendu,
-- à coder sous rails 6 de préférence,
-- pensez à mettre en place un seed et à mettre le site sur Heroku
-- Merci de m'ajouter en tant que collaborateur sur votre dossier github afin que je puisse voir vos différentes branch et merge sur le temps que vous avez coder.
-- Si vous n'arrivez pas à tout faire cela n'est pas éliminatoire. L'exercice peut être dense, mais n'y passez pas plus d'une après-midi dessus (3-4 heures max).
-- Je ne recherche pas un designer mais quelqu'un qui sait ranger son code CSS et qui sait faire du responsive avant tout, donc pas de pression sur la beauté de l'app :).
-
-On va compter une après-midi ou 3-4 heures de travail max (l'idée n'est pas que vous passiez votre vie dessus :) ).
-</p>
 </div>
